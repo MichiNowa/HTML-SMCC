@@ -66,9 +66,97 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li:hover a{
+nav ul li:hover a {
     color: #ffd208;
 }
+
+h1 {
+    margin: 5;
+    color: rgb(7, 7, 82);
+    font-size: 60px;
+    text-shadow: 4px 4px 2px #ffd208;
+}
+
+h2 {
+    color: rgb(7, 7, 82);
+    text-shadow: -1px 0 #ffd208, 0 2px #ffd208, 2px 0 #ffd208, 0 -1px #ffd208;
+}
+
+p {
+    text-align: justify;
+}
+
+main {
+    position: relative;
+    background-attachment: fixed;
+    background-image: url(images/smccblur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#smcclogo,
+#smccvision,
+#smccmission,
+#ccis,
+#cbm,
+#cthm,
+#studentserv,
+#onlineserv,
+#contactsec {
+    background-color: #05053bf5;
+    border-radius: 15px;
+    padding: 20px;
+    width: 70%;
+    margin: 50px auto;
+    color: white;
+}
+
+h3 {
+    color: #ffd208;
+}
+
+table {
+    border-radius: 5px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+td {
+    text-align: center;
+    padding: 20px .625em .625em .625em;
+    border-bottom: 1px solid #f8f8f8;
+    text-align: left;
+    font-size: 13px;
+}
+
+#studentserv a,
+#onlineserv a {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+#studentserv a:hover,
+#onlineserv a:hover,
+#contactsec figure a:hover {
+    color: #ffd208;
+}
+
+#contactsec img {
+    vertical-align: middle;
+}
+
+#contactsec figure a,
+#contactsec figure {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
 
 
 /* Media query for smaller screens */
@@ -102,87 +190,28 @@ nav ul li:hover a{
         font-size: 40px;
     }
 
-    #ccistable td{
+    td {
         padding: 20px .625em .625em .625em;
         height: 60px;
         vertical-align: middle;
         box-sizing: border-box;
-        overflow-x: hidden;
-        overflow-y: auto;
         width: 120px;
         font-size: 13px;
-        text-overflow: ellipsis;
     }
 
+    #nc {
+        text-align: center;
+    }
 }
 
-h1 {
-    margin: 5;
-    color: rgb(7, 7, 82);
-    font-size: 60px;
-    text-shadow: 4px 4px 2px #ffd208;
+@media only screen and (max-width: 1150px) {
+    #cbm td {
+        white-space: wrap;
+    }
 }
 
-h2 {
-    color: rgb(7, 7, 82);
-    text-shadow: -1px 0 #ffd208, 0 2px #ffd208, 2px 0 #ffd208, 0 -1px #ffd208;
+@media only screen and (max-width: 600px) {
+    td {
+        white-space: wrap;
+    }
 }
-
-p {
-    text-align: justify;
-}
-
-main {
-    position: relative;
-    background-attachment: fixed;
-    background-image: url(images/smccblur.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#smcclogo , #smccvision , #smccmission, #ccis {
-    background-color: #05053bf5;
-    border-radius: 15px;
-    padding: 20px;
-    width: 70%;
-    margin: 50px auto;
-    color: white;
-}
-
-h3 {
-    color: #ffd208;
-}
-
-#ccis {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-
-#ccistable {
-    border-radius: 5px;
-    font-weight: normal;
-    border: none;
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 100%;
-    white-space: nowrap;
-}
-
-#ccistable td{
-    text-align: center;
-    padding: 8px;
-    border-right: 1px solid #f8f8f8;
-    text-align: left;
-}
-
-/*.content {
-    width: 90%;
-    max-width: 1200px;
-    margin: 4em auto;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: justify;
-    position: relative;
-    z-index: 2;
-}*/
