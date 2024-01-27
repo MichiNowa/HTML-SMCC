@@ -1,4 +1,5 @@
-html,body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -19,7 +20,8 @@ header {
 }
 
 .content {
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
     margin: 4em auto;
     font-size: 20px;
     line-height: 30px;
@@ -51,17 +53,39 @@ nav ul {
     transition: 1;
 }
 
-
 nav ul li {
     display: inline-block;
     padding: 20px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-    font-family: sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 1000px) {
+    nav {
+        position: relative;
+        width: 100%;
+        background-color: rgb(7, 7, 82);
+    }
+
+    .logo {
+        position: relative;
+        float: left;
+        margin: 16px 36px;
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 7px;
+        text-align:end;
+    }
 }
