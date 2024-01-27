@@ -1,56 +1,55 @@
-html,
 body {
     margin: 0;
     padding: 0;
     width: 100%;
     scroll-behavior: smooth;
-}
-
-body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     width: 100%;
     height: 100vh;
-    background-image: url('images/smccnasipit_cover.jpg');
+    background-image: url('images/smcc.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.content {
-    width: 90%;
-    max-width: 1200px;
-    margin: 4em auto;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: justify;
-}
-
-.logo {
+#logo {
     position: fixed;
-    float: left;
     margin: 16px 36px;
     color: white;
     font-weight: bold;
     font-size: 24px;
+    z-index: 3;
+}
+
+#logo img {
+    vertical-align: middle;
 }
 
 nav {
     position: fixed;
     width: 100%;
     background-color: rgb(7, 7, 82);
+    z-index: 2;
+    top: 0;
 }
 
 nav ul {
+    text-align: right;
     list-style: none;
     overflow: hidden;
     color: white;
     padding: 0;
-    text-align: right;
     margin: 0;
-    transition: 1;
 }
 
 nav ul li {
@@ -64,28 +63,96 @@ nav ul li a {
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    transition: color 0.3s;
 }
 
+nav ul li:hover a{
+    color: #ffd208;
+}
+
+
 /* Media query for smaller screens */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 980px) {
     nav {
-        position: relative;
+        position: absolute;
         width: 100%;
         background-color: rgb(7, 7, 82);
+        z-index: 2;
+        top: 0;
     }
 
-    .logo {
-        position: relative;
-        float: left;
+    #logo {
+        position: absolute;
         margin: 16px 36px;
         color: white;
         font-weight: bold;
         font-size: 24px;
+        z-index: 3;
     }
 
     nav ul li {
         display: block;
-        padding: 7px;
-        text-align:end;
+        padding: 5px;
+        text-align: end;
     }
+
+    h1 {
+        margin: 5;
+        color: black;
+        font-size: 40px;
+    }
+
 }
+
+h1 {
+    margin: 5;
+    color: rgb(7, 7, 82);
+    font-size: 60px;
+    text-shadow: 4px 4px 2px #ffd208;
+}
+
+h2 {
+    color: rgb(7, 7, 82);
+    text-shadow: -1px 0 #ffd208, 0 2px #ffd208, 2px 0 #ffd208, 0 -1px #ffd208;
+}
+
+p {
+    text-align: justify;
+}
+
+main {
+    position: relative;
+    background-attachment: fixed;
+    background-image: url(images/smccblur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+figcaption {
+    font-size: small;
+}
+
+#smcclogo , #smccvision , #smccmission {
+    background-color: #05053bf5;
+    border-radius: 15px;
+    padding: 20px;
+    width: 70%;
+    margin: 50px auto;
+    color: white;
+}
+
+h3 {
+    color: #ffd208;
+}
+
+
+/*.content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    position: relative;
+    z-index: 2;
+}*/
