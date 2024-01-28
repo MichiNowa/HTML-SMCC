@@ -157,6 +157,23 @@ td {
     color: white;
 }
 
+#butt {
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    padding: 3px 5px;
+    text-align: center;
+    transition: 200ms;
+    width: auto;
+    font-size: 12px;
+}
+
+#butt:hover {
+    width: auto;
+    outline: 0;
+    background: #f4e603;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, .2), 0 3px 8px 0 rgba(0, 0, 0, .15);
+}
 
 
 /* Media query for smaller screens */
